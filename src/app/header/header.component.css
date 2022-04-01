@@ -1,0 +1,19 @@
+nav img{
+    width: 70px;
+}
+nav{
+    background-color: skyblue;
+    padding: 10px;
+}
+ul{
+    float: right;
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}

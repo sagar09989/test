@@ -1,0 +1,153 @@
+<!--<h1>application name : {{title}}</h1>
+<button (click)="getname('hello')">Click Me</button><br>
+<button (click)="getnumber('anil','naman')">Click Me</button>
+<br><br>
+<input type="text" #box (keyup)="getname(box.value)" placeholder="keyup">
+<br><br>
+<input type="text" #box1 (keydown)="getname(box1.value)" placeholder="keydown">
+<br><br>
+<input type="text" #box2 (blur)="getname(box2.value)" placeholder="blur">
+<br><br>
+<input type="text" #box3  placeholder="enter name" name="name">
+<button (click)="getvalue(box3.value)">Click Me</button>
+
+<p>box value is : {{getdisplay}}</p>
+
+<button (click)="counter('minus')">--</button>
+<p>count : {{count}}</p>
+<button (click)="counter('add')">++</button>
+<h1 class="heading">{{title}}</h1>
+<style>
+  .heading{
+    color: black;
+  }
+</style>
+<app-login></app-login>
+
+<input type="text" name="user-name" value="{{name}}" disabled="{{disable}}">
+<br><br>
+<input type="text" name="user-name" [value]=name [disabled]=disable>
+-->
+
+<!--<a routerLink="home">home</a>
+<br>
+<a routerLink="about">about</a>
+<br>
+<a routerLink="user">user</a>
+<br>
+<router-outlet></router-outlet>
+<br><br>
+<a routerLink="user/10">samir</a>
+<br>
+<a routerLink="user/20">anil</a>
+<br>
+<a routerLink="user/30">sagar</a>
+-->
+
+<!--<ng-template *ngIf="show==='true'; then login; else logout">
+  this block is never show
+</ng-template>
+<ng-template #login>
+  <h1>login block</h1>
+</ng-template>
+<ng-template #logout>
+  <h1>logout block</h1>
+</ng-template>
+-->
+
+<!--<ng-template [ngIf]="color=='red'">
+  <h1 style="color: red;">Red Color</h1>
+</ng-template>
+<ng-template [ngIf]="color=='green'">
+  <h1 style="color: green;">Green Color</h1>
+</ng-template>
+<ng-template [ngIf]="color=='blue'">
+  <h1 style="color: blue;">Blue Color</h1>
+</ng-template>
+-->
+
+<!--<div [ngSwitch]="day">
+  <h1 *ngSwitchCase="'sunday'">Today sunday</h1>
+  <h1 *ngSwitchCase="'monday'">Today monday</h1>
+  <h1 *ngSwitchCase="'tuesday'">Today tuesday</h1>
+  <h1 *ngSwitchCase="'wednesday'">Today wednesday</h1>
+  <h1 *ngSwitchCase="'thursday'">Today thursday</h1>
+  <h1 *ngSwitchCase="'friday'">Today friday</h1>
+  <h1 *ngSwitchCase="'saturday'">Today saturday</h1>
+  <h1 *ngSwitchDefault>not found</h1>
+</div>
+-->
+
+<!--<h1 *ngFor="let arr of users">Name is : {{arr}}</h1>
+<h1 *ngFor="let arr of userdetails">{{arr.name}}--{{arr.email}}--{{arr.city}}</h1>
+-->
+
+<!--<ul *ngFor="let person of persons">
+  <li>Name : {{person.name}}</li>
+  <li>Phone : {{person.phone}}</li>
+  <li>City : {{person.city}}</li>
+  <li>socialacounts</li>
+  <ul *ngFor="let account of person.socialacounts">
+    <li>{{account}}</li>
+  </ul>
+  <li>Study : {{person.study}} </li>
+</ul>
+-->
+<!--
+<h1 [style.color]="colorname" [style.background]="bgcolor">{{title}}</h1>
+<h1 [style.color]="colorname" [style.background]="bgcolor">Heading Tag</h1>
+<button (click)="updatecolor()">Update Color</button>
+-->
+<!--<button (click)="toggle()">Toggle</button>
+<h1 *ngIf="display">
+  Heading tag
+</h1>-->
+<!--<app-login></app-login>-->
+<!--<p>
+  <ngb-alert [dismissible]="false">
+    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+  </ngb-alert>
+</p>
+
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+  <ngb-panel title="Simple">
+    <ng-template ngbPanelContent>
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel>
+    <ng-template ngbPanelTitle>
+      <span>&#9733; <b>Fancy</b> title &#9733;</span>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel title="Disabled" [disabled]="true">
+    <ng-template ngbPanelContent>
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
+<div>
+<button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">
+  <mat-icon>menu</mat-icon>
+</button>-->
+<!-- <app-login></app-login> -->
+
+<router-outlet></router-outlet>
